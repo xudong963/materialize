@@ -4827,9 +4827,9 @@ dependencies = [
 
 [[package]]
 name = "sysinfo"
-version = "0.21.2"
+version = "0.24.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f88d66f3341b688163d3585037954ff276cf24a234d015b30025318a3e3449a"
+checksum = "7d80929a3b477bce3a64360ca82bfb361eacce1dcb7b1fb31e8e5e181e37c212"
 dependencies = [
  "cfg-if",
  "core-foundation-sys",
