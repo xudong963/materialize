@@ -866,6 +866,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "columnation"
+version = "0.1.0"
+source = "git+https://github.com/frankmcsherry/columnation#bfd9e2a953768887138e56f10f9be13e27ef175a"
+dependencies = [
+ "paste",
+]
+
+[[package]]
 name = "compile-time-run"
 version = "0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5105,7 +5113,7 @@ dependencies = [
 [[package]]
 name = "timely"
 version = "0.12.0"
-source = "git+https://github.com/TimelyDataflow/timely-dataflow#dd608780932e173a2f8e274197ac3cd3dc5bff44"
+source = "git+https://github.com/TimelyDataflow/timely-dataflow#6a736009d0276b181f0a069174390b99c8bd9ae1"
 dependencies = [
  "abomonation",
  "abomonation_derive",
@@ -5116,18 +5124,19 @@ dependencies = [
  "serde_derive",
  "timely_bytes",
  "timely_communication",
+ "timely_container",
  "timely_logging",
 ]
 
 [[package]]
 name = "timely_bytes"
 version = "0.12.0"
-source = "git+https://github.com/TimelyDataflow/timely-dataflow#dd608780932e173a2f8e274197ac3cd3dc5bff44"
+source = "git+https://github.com/TimelyDataflow/timely-dataflow#6a736009d0276b181f0a069174390b99c8bd9ae1"
 
 [[package]]
 name = "timely_communication"
 version = "0.12.0"
-source = "git+https://github.com/TimelyDataflow/timely-dataflow#dd608780932e173a2f8e274197ac3cd3dc5bff44"
+source = "git+https://github.com/TimelyDataflow/timely-dataflow#6a736009d0276b181f0a069174390b99c8bd9ae1"
 dependencies = [
  "abomonation",
  "abomonation_derive",
@@ -5141,9 +5150,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "timely_container"
+version = "0.12.0"
+source = "git+https://github.com/TimelyDataflow/timely-dataflow#6a736009d0276b181f0a069174390b99c8bd9ae1"
+dependencies = [
+ "columnation",
+ "serde",
+]
+
+[[package]]
 name = "timely_logging"
 version = "0.12.0"
-source = "git+https://github.com/TimelyDataflow/timely-dataflow#dd608780932e173a2f8e274197ac3cd3dc5bff44"
+source = "git+https://github.com/TimelyDataflow/timely-dataflow#6a736009d0276b181f0a069174390b99c8bd9ae1"
 
 [[package]]
 name = "tinytemplate"
